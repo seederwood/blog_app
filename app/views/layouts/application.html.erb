@@ -13,15 +13,25 @@
 
   <body>
     <header id="main_navigation" class="clearfix">
-      <a href="#" class="name">Ray Climie</a>
+      <%= link_to "Ray Climie", root_path, class: "name" %>
       <nav>
         <%= link_to "Articles", articles_path %>
-        
+
         <a href="#">Projects</a>
         <a href="contact.html">Contact</a>
       </nav>
     </header>
 
     <%= yield %>
+
+    <footer id="main_footer">
+      <p class="copyright">&copy;2017 Ray Climie</p>
+      <nav>
+        <a href="http://twitter.com/buddycub" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="http://github.com/seederwood" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/ray-climie-13a64013b/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+      </nav>
+    </footer>
+
   </body>
 </html>
