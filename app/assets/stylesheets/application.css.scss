@@ -60,9 +60,15 @@ p, ul, ol {
   clear: both;
 }
 
+
+.show_header {
+  text-shadow: 1px 1px 5px #6E5682;
+}
+
 #main_navigation {
   padding: 2.5em 5%;
   border-bottom: 1px solid $border;
+  /*background: #F4CA6F;*/
   .name {
     font-weight: 700;
     font-size: .8em;
@@ -93,6 +99,7 @@ nav {
     text-decoration: none;
     margin: 0 1rem;
     font-size: 1rem;
+    text-shadow: 1px 1px 3px #6E5682;
   }
 }
 
