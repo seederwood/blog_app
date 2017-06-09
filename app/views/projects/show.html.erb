@@ -13,6 +13,9 @@
     <a href="<%= @project.link %>" class="project_button" target="_blank">Visit <%= @project.title %></a>
   </div>
 
+  <%= link_to "Edit", edit_project_path(@project) %> |
+  <%= link_to "Delete", project_path(@project), method: :delete, data: {confirm: 'Are you sure about that, Ray?'} %>
+
   <hr />
 
   <div id="share_box">
@@ -21,8 +24,6 @@
   </div>
 
   <hr />
-
-  <%= render 'disqus' %>
 
 
 </div>

@@ -9,6 +9,10 @@
     <%= markdown @article.content %>
   </div>
 
+  <%= link_to "Edit", edit_article_path(@article) %> |
+  <%= link_to "Delete", article_path(@article), method: :delete, data: {confirm: 'Are you sure about that, Ray?'} %>
+
+
   <hr />
 
   <div id="share_box">
