@@ -1,0 +1,29 @@
+<div id="post_show_content" class="skinny_wrapper wrapper_padding">
+  <header>
+    <p class="date"><%= @project.created_at.strftime("%^a, %d %B | %H:%M") %></p>
+    <h1 class="show_header"><%= @project.title %></h1>
+    <hr />
+  </header>
+
+  <div id="content">
+    <%= markdown @project.description %>
+  </div>
+
+  <div class="button_wrapper">
+    <a href="<%= @project.link %>" class="project_button" target="_blank">Visit <%= @project.title %></a>
+  </div>
+
+  <hr />
+
+  <div id="share_box">
+    <p>Share '<%= @project.title %>'</p>
+    <%= social_share_button_tag(@project.title) %>
+  </div>
+
+  <hr />
+
+  <%= render 'disqus' %>
+
+
+</div>
+<script id="dsq-count-scr" src="//my-blog-e5ynn1p5qh.disqus.com/count.js" async></script>
