@@ -8,13 +8,14 @@ end
 ruby '2.3.3'
 
 gem 'coffee-rails', '~> 4.2'
+gem 'friendly_id', '~> 5.2', '>= 5.2.1'
 gem 'jbuilder', '~> 2.5'
 gem 'puma', '~> 3.7'
 gem 'pygments.rb', '~> 1.1', '>= 1.1.2'
 gem 'rails', '~> 5.1.1'
 gem 'redcarpet', '~> 3.4'
 gem 'sass-rails', '~> 5.0'
-gem 'friendly_id', '~> 5.2', '>= 5.2.1'
+gem 'social-share-button', '~> 0.10.0'
 
 gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'

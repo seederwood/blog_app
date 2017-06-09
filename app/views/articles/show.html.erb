@@ -12,13 +12,18 @@
   <hr />
 
   <div id="share_box">
-    <p>Share Todo List</p>
-    <!-- Twitter -->
-    <a onclick="javascript:window.open('http://twitter.com/share?text=<%= @article.title %> by @buddycub - &amp;<%= url_for([@article, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>
-    <!-- Facebook -->
+    <p>Share <%= @article.title %></p>
+    <%= social_share_button_tag(@article.title) %>
+    <!--
+    ** Twitter **
+    <a href="https://twitter.com/share" class="twitter-share-button" data-text="I just posted a new article..." data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    ** Facebook **
     <a onclick="javascript:window.open('http://www.facebook.com/sharer.php?u=<%= url_for([@article, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-facebook"></i></a>
-    <!-- Google Plus -->
+
+    ** Google Plus **
     <a onclick="javascript:window.open('https://plus.google.com/share?url=<%= url_for([@article, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
+  -->
   </div>
 
   <hr />
