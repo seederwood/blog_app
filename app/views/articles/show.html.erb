@@ -6,7 +6,7 @@
   </header>
 
   <div id="content">
-    <%= @article.content %>
+    <%= markdown @article.content %>
   </div>
 
   <hr />
@@ -23,4 +23,5 @@
 
   <hr />
 
+  <%= link_to "edit", edit_article_path(@article) %>
 </div>
