@@ -17,6 +17,7 @@ gem 'rails', '~> 5.1.1'
 gem 'redcarpet', '~> 3.4'
 gem 'sass-rails', '~> 5.0'
 gem 'social-share-button', '~> 0.10.0'
+gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 
 gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
