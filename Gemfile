@@ -5,22 +5,22 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-ruby '2.3.3'
+ruby '2.4.1'
 
 gem 'coffee-rails', '~> 4.2'
 gem 'friendly_id', '~> 5.2', '>= 5.2.1'
 gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+gem 'mail_form'
 gem 'puma', '~> 3.7'
 gem 'pygments.rb', '~> 1.1', '>= 1.1.2'
 gem 'rails', '~> 5.1.1'
 gem 'redcarpet', '~> 3.4'
 gem 'sass-rails', '~> 5.0'
 gem 'social-share-button', '~> 0.10.0'
-gem 'will_paginate', '~> 3.1', '>= 3.1.6'
-
 gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
+gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
