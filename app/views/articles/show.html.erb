@@ -1,4 +1,4 @@
-<div id="post_show_content" class="skinny_wrapper wrapper_padding">
+<div id="post_show_content" class="skinny_wrapper">
   <header>
     <p class="date"><%= @article.created_at.strftime("%^a, %d %B | %H:%M") %></p>
     <h1 class="show_header"><%= @article.title %></h1>
@@ -27,7 +27,4 @@
   <hr />
 
   <%= render 'disqus' %>
-
-
 </div>
-<script id="dsq-count-scr" src="//my-blog-e5ynn1p5qh.disqus.com/count.js" async></script>

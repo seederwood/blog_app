@@ -12,6 +12,7 @@
 //
 //= require rails-ujs
 //= require jquery
+//= require gritter
 //= require jquery_ujs
 //= require social-share-button
 //= require turbolinks
