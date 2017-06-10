@@ -3,7 +3,7 @@
 <div id="posts_wrapper" class="skinny_wrapper">
   <% @articles.each do |article| %>
     <div class="post">
-      <%= article.created_at.strftime("%^a, %d %B | %H:%M") %>
+      <p class="date_large"><%= article.created_at.strftime("%^a, %d %B | %H:%M") %></p>
       <h2><%= link_to article.title, article %></h2>
       <hr />
     </div>
