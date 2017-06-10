@@ -8,6 +8,7 @@ end
 ruby '2.4.1'
 
 gem 'coffee-rails', '~> 4.2'
+gem 'devise'
 gem 'friendly_id', '~> 5.2', '>= 5.2.1'
 gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'

@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
   before_action :find_article, only: %i[show edit destroy update]
+  before_action :authenticate_user!, except: %i[index show]
   def index
     @articles = Article.all.order('created_at desc').paginate(page: params[:page], per_page: 10)
   end
