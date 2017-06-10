@@ -9,9 +9,13 @@
     <%= markdown @article.content %>
   </div>
 
-  <%= link_to "Edit", edit_article_path(@article) %> |
-  <%= link_to "Delete", article_path(@article), method: :delete, data: {confirm: 'Are you sure about that, Ray?'} %>
 
+  <% if user_signed_in? %>
+    <div id="admin_links">
+      <%= link_to "Edit Article", edit_article_path(@article) %> |
+      <%= link_to "Delete Article", article_path(@article), method: :delete, data: {confirm: 'Are you sure about that, Ray?'} %>
+    </div>
+  <% end %>
 
   <hr />
 
