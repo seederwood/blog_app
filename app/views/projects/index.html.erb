@@ -3,7 +3,7 @@
 <div id="posts_wrapper" class="skinny_wrapper">
   <% @projects.each do |project| %>
     <div class="post">
-      <%= project.created_at.strftime("%^a, %d %B | %H:%M") %>
+      <p class="date_large"><%= project.created_at.localtime.strftime('%^a, %d %B %Y | %H:%M') %></p>
       <h2><%= link_to project.title, project %></h2>
       <hr />
     </div>

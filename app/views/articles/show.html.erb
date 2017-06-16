@@ -1,7 +1,7 @@
 <div id="post_show_content" class="skinny_wrapper wrapper_padding">
   <header>
-    <p class="date"><%= @article.created_at.strftime("%^a, %d %B | %H:%M") %></p>
     <h1 class="show_header"><%= @article.title %></h1>
+    <p class="date"><%= @article.created_at.localtime.strftime('%^a, %d %B %Y | %H:%M') %></p>
     <hr />
   </header>
 
