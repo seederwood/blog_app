@@ -41,7 +41,7 @@
 
 ## Modeling the data:
 
-  -  Post
+  - Post
     - title: string
     - content: text
 
